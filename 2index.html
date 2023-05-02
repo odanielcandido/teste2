@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro de Produto</title>
+  <style>
+    /* definindo a cor primária preta e secundária laranja */
+    :root {
+      --cor-primaria: #000000;
+      --cor-secundaria: #FFA500;
+    }
+
+    /* definindo um fundo branco para a página */
+    body {
+      background-color: #FFFFFF;
+    }
+
+    /* estilizando o título principal */
+    h1 {
+      font-size: 36px;
+      font-family: Arial, sans-serif;
+      color: var(--cor-primaria);
+      text-align: center;
+    }
+
+    /* estilizando as etiquetas de rótulo */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-family: Arial, sans-serif;
+      color: var(--cor-primaria);
+    }
+
+    /* estilizando a entrada de texto */
+    input[type="text"], textarea, input[type="number"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    /* estilizando a entrada de envio */
+    input[type="submit"] {
+      background-color: var(--cor-secundaria);
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* estilizando a entrada de envio ao passar o mouse por cima */
+    input[type="submit"]:hover {
+      background-color: #FFFFFF;
+      color: var(--cor-secundaria);
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cadastrar Produto</h1>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" name="descricao"></textarea><br><br>
+    <label for="preco">Preço:</label>
+    <input type="number" id="preco" name="preco"><br><br>
+    <input type="submit" value="Cadastrar">
+  </form>
+</body>
+</html>
